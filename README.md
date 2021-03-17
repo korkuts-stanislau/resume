@@ -1,2 +1,2 @@
-# resume
-Is is my repository for resume
+# Resume
+It is my repository for resume
