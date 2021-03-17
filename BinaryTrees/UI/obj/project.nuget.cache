@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "FqXARxP2HmVLe4MPIO3k3tpG6tMNDACVJRwhdR+/8jN9RVZhJU90bEkjuy2dlkeSZewKkweBgRCy2UTtCKgufw==",
+  "success": true,
+  "projectFilePath": "S:\\Data\\work\\Mironsky\\Algs\\BinaryTrees\\UI\\UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stani\\.nuget\\packages\\easyconsole\\1.1.0\\easyconsole.1.1.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"EasyConsole 1.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "EasyConsole",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

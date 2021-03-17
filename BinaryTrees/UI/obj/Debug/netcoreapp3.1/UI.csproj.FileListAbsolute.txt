@@ -1,0 +1,17 @@
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\UI.exe
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\UI.deps.json
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\UI.runtimeconfig.json
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\UI.runtimeconfig.dev.json
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\UI.dll
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\UI.pdb
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\BinaryTrees.dll
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\BinaryTrees.pdb
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.csprojAssemblyReference.cache
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.AssemblyInfoInputs.cache
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.AssemblyInfo.cs
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.csproj.CoreCompileInputs.cache
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.csproj.CopyComplete
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.dll
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.pdb
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\obj\Debug\netcoreapp3.1\UI.genruntimeconfig.cache
+S:\Data\work\Mironsky\Algs\BinaryTrees\UI\bin\Debug\netcoreapp3.1\EasyConsole.dll

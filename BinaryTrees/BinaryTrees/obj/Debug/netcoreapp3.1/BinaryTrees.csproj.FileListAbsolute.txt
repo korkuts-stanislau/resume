@@ -1,0 +1,9 @@
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\bin\Debug\netcoreapp3.1\BinaryTrees.deps.json
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\bin\Debug\netcoreapp3.1\BinaryTrees.dll
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\bin\Debug\netcoreapp3.1\BinaryTrees.pdb
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\obj\Debug\netcoreapp3.1\BinaryTrees.AssemblyInfoInputs.cache
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\obj\Debug\netcoreapp3.1\BinaryTrees.AssemblyInfo.cs
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\obj\Debug\netcoreapp3.1\BinaryTrees.csproj.CoreCompileInputs.cache
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\obj\Debug\netcoreapp3.1\BinaryTrees.dll
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\obj\Debug\netcoreapp3.1\BinaryTrees.pdb
+S:\Data\work\Mironsky\Algs\BinaryTrees\BinaryTrees\obj\Debug\netcoreapp3.1\BinaryTrees.csprojAssemblyReference.cache

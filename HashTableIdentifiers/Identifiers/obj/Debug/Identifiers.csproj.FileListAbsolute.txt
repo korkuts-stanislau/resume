@@ -1,0 +1,10 @@
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\obj\Debug\Identifiers.csprojAssemblyReference.cache
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\obj\Debug\Identifiers.Form1.resources
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\obj\Debug\Identifiers.Properties.Resources.resources
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\obj\Debug\Identifiers.csproj.GenerateResource.cache
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\obj\Debug\Identifiers.csproj.CoreCompileInputs.cache
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\bin\Debug\Identifiers.exe.config
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\bin\Debug\Identifiers.exe
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\bin\Debug\Identifiers.pdb
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\obj\Debug\Identifiers.exe
+S:\Data\work\Mironsky\EUMD\Lab2\Identifiers\obj\Debug\Identifiers.pdb

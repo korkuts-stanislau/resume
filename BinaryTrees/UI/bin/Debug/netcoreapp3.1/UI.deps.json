@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "UI/1.0.0": {
+        "dependencies": {
+          "BinaryTrees": "1.0.0",
+          "EasyConsole": "1.1.0"
+        },
+        "runtime": {
+          "UI.dll": {}
+        }
+      },
+      "EasyConsole/1.1.0": {
+        "runtime": {
+          "lib/net452/EasyConsole.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "BinaryTrees/1.0.0": {
+        "runtime": {
+          "BinaryTrees.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EasyConsole/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fEBI56S+m8g3VXRFHYxf9a9VUmBAkT8WZXFpRVou7cDTWmAEaloSWyXPHG7tHfUt+wkBovc9GSzZohuYdpWcsQ==",
+      "path": "easyconsole/1.1.0",
+      "hashPath": "easyconsole.1.1.0.nupkg.sha512"
+    },
+    "BinaryTrees/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
