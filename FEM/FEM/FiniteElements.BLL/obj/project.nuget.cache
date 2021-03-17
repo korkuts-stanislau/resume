@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "2sSzEAZDeanJ54hkpHXBIe4f4/k7g7LDmoQwPoRPFgpZJ+/wbaRR1gWbnV4PvrC5h0MOrgDvQ7YDxrWemkt9tg==",
+  "success": true,
+  "projectFilePath": "S:\\Data\\university\\5sem\\kskr\\lab3\\FEM\\FiniteElements.BLL\\FiniteElements.BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stani\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
+    "C:\\Users\\stani\\.nuget\\packages\\accord.math\\3.8.0\\accord.math.3.8.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\stani\\.nuget\\packages\\system.drawing.common\\5.0.1\\system.drawing.common.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

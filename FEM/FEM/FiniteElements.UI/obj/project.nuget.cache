@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "kyuBx2ED8nPbj8rdzYd1Epg8BcWj6J0QVpiJzfNebzrBy8jQMu3RvBOTNu3dooDpV59com7wVl2iXW9gTeEfEw==",
+  "success": true,
+  "projectFilePath": "S:\\Data\\university\\5sem\\kskr\\lab3\\FEM\\FiniteElements.UI\\FiniteElements.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stani\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
+    "C:\\Users\\stani\\.nuget\\packages\\accord.math\\3.8.0\\accord.math.3.8.0.nupkg.sha512",
+    "C:\\Users\\stani\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\stani\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\stani\\.nuget\\packages\\system.drawing.common\\5.0.1\\system.drawing.common.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
