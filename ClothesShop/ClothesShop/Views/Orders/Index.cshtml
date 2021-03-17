@@ -1,0 +1,96 @@
+﻿@model ClothesShop.ViewModels.Order.IndexOrderViewModel
+
+@{ ViewData["Title"] = "Index";
+    var defaultOrder = Model.Orders.FirstOrDefault(); }
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => defaultOrder.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultOrder.CustomerPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultOrder.CustomerAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultOrder.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultOrder.IsPaid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultOrder.IsSent)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Orders)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerPhone)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerAddress)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Date)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsPaid)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsSent)
+    </td>
+    <td>
+
+        @if (User.IsInRole(ClothesShop.Areas.Identity.Roles.Admin))
+        {
+<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Delete</a>}
+        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Details</a>
+    </td>
+</tr>
+}
+    </tbody>
+</table>
+<div class="d-flex align-items-center justify-content-center">
+
+    @if (Model.PageViewModel.HasPreviousPage)
+    {
+<a asp-action="Index"
+   asp-route-page="1"
+   class="btn btn-outline-dark m-1">
+    First page
+</a>
+
+                <a asp-action="Index"
+                   asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+                   class="btn btn-outline-dark m-1">
+                    Previous page
+                </a>}
+    <a class="btn btn-outline-dark m-1">
+        @Model.PageViewModel.PageNumber
+    </a>
+    @if (Model.PageViewModel.HasNextPage)
+    {
+<a asp-action="Index"
+   asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+   class="btn btn-outline-dark m-1">
+    Next page
+</a>
+
+                <a asp-action="Index"
+                   asp-route-page="@Model.PageViewModel.TotalPages"
+                   class="btn btn-outline-dark m-1">
+                    Last page (@Model.PageViewModel.TotalPages)
+                </a>}
+</div>

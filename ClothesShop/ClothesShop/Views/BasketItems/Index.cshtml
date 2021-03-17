@@ -1,0 +1,90 @@
+﻿@model ClothesShop.ViewModels.BasketItem.IndexBasketItemViewModel
+
+@{ ViewData["Title"] = "Index";
+    var defaultBasketItem = Model.BasketItems.FirstOrDefault(); }
+
+
+
+<form method="get" class="form-inline">
+    <label>BasketItem name:</label>
+    <input name="selectedName" value="@Model.FilterBasketItemViewModel.SelectedName" class="form-control col-2 m-1" />
+
+    <input type="hidden" name="isFromFilter" value="true" />
+    <input type="submit" value="Filter" class="btn btn-outline-dark col-3 m-1" />
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index"
+                   asp-route-sortState="@Model.SortBasketItemViewModel.NameSort"
+                   asp-route-selectedName="@Model.FilterBasketItemViewModel.SelectedName">
+                    @Html.DisplayNameFor(model => defaultBasketItem.ClothingItem)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultBasketItem.Count)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.BasketItems)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ClothingItem.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Count)
+    </td>
+    <td>
+        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Details</a>
+        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Delete</a>
+    </td>
+</tr>}
+    </tbody>
+</table>
+
+<a asp-action="Create" asp-controller="Orders" class="btn btn-outline-dark m-1">Make order</a>
+
+<div class="d-flex align-items-center justify-content-center">
+
+    @if (Model.PageViewModel.HasPreviousPage)
+    {
+<a asp-action="Index"
+   asp-route-page="1"
+   asp-route-sortState="@Model.SortBasketItemViewModel.Current"
+   asp-route-selectedName="@Model.FilterBasketItemViewModel.SelectedName"
+   class="btn btn-outline-dark m-1">
+    First page
+</a>
+
+                <a asp-action="Index"
+                   asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+                   asp-route-sortState="@Model.SortBasketItemViewModel.Current"
+                   asp-route-selectedName="@Model.FilterBasketItemViewModel.SelectedName"
+                   class="btn btn-outline-dark m-1">
+                    Previous page
+                </a>}
+    <a class="btn btn-outline-dark m-1">
+        @Model.PageViewModel.PageNumber
+    </a>
+    @if (Model.PageViewModel.HasNextPage)
+    {
+<a asp-action="Index"
+   asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+   asp-route-sortState="@Model.SortBasketItemViewModel.Current"
+   asp-route-selectedName="@Model.FilterBasketItemViewModel.SelectedName"
+   class="btn btn-outline-dark m-1">
+    Next page
+</a>
+
+                <a asp-action="Index"
+                   asp-route-page="@Model.PageViewModel.TotalPages"
+                   asp-route-sortState="@Model.SortBasketItemViewModel.Current"
+                   asp-route-selectedName="@Model.FilterBasketItemViewModel.SelectedName"
+                   class="btn btn-outline-dark m-1">
+                    Last page (@Model.PageViewModel.TotalPages)
+                </a>}
+</div>

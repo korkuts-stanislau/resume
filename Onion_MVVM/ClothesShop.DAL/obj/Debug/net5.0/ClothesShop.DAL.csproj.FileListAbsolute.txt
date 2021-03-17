@@ -1,0 +1,15 @@
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\bin\Debug\net5.0\ClothesShop.DAL.deps.json
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\bin\Debug\net5.0\ClothesShop.DAL.runtimeconfig.json
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\bin\Debug\net5.0\ClothesShop.DAL.runtimeconfig.dev.json
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\bin\Debug\net5.0\ClothesShop.DAL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\bin\Debug\net5.0\ref\ClothesShop.DAL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\bin\Debug\net5.0\ClothesShop.DAL.pdb
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.AssemblyInfoInputs.cache
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.AssemblyInfo.cs
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.csproj.CoreCompileInputs.cache
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ref\ClothesShop.DAL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.pdb
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.genruntimeconfig.cache
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.DAL\obj\Debug\net5.0\ClothesShop.DAL.csprojAssemblyReference.cache

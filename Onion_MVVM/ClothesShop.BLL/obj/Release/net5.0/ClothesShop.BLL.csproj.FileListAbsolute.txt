@@ -1,0 +1,15 @@
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\bin\Release\net5.0\ClothesShop.BLL.deps.json
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\bin\Release\net5.0\ClothesShop.BLL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\bin\Release\net5.0\ref\ClothesShop.BLL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\bin\Release\net5.0\ClothesShop.BLL.pdb
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\bin\Release\net5.0\ClothesShop.DAL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\bin\Release\net5.0\ClothesShop.DAL.pdb
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.csprojAssemblyReference.cache
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.GeneratedMSBuildEditorConfig.editorconfig
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.AssemblyInfoInputs.cache
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.AssemblyInfo.cs
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.csproj.CoreCompileInputs.cache
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.csproj.CopyComplete
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ref\ClothesShop.BLL.dll
+S:\Data\work\Mironsky\Web\Lab2\ClothesShop.BLL\obj\Release\net5.0\ClothesShop.BLL.pdb

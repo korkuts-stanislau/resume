@@ -1,0 +1,91 @@
+﻿@model ClothesShop.ViewModels.ClothingItemType.IndexClothingItemTypeViewModel
+
+@{ ViewData["Title"] = "Index";
+    var defaultClothingItemType = Model.ClothingItemTypes.FirstOrDefault(); }
+
+
+
+<p>
+    <a asp-action="Create"  class="btn btn-outline-dark m-1">Create</a>
+</p>
+<form method="get" class="form-inline">
+    <label>ClothingItemType name:</label>
+    <input name="selectedName" value="@Model.FilterClothingItemTypeViewModel.SelectedName" class="form-control col-2 m-1" />
+
+    <input type="hidden" name="isFromFilter" value="true" />
+    <input type="submit" value="Filter" class="btn btn-outline-dark col-3 m-1" />
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index"
+                   asp-route-sortState="@Model.SortClothingItemTypeViewModel.NameSort"
+                   asp-route-selectedName="@Model.FilterClothingItemTypeViewModel.SelectedName">
+                    @Html.DisplayNameFor(model => defaultClothingItemType.Name)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultClothingItemType.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ClothingItemTypes)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Description)
+    </td>
+    <td>
+        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Details</a>
+        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Edit</a>
+        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-dark m-1">Delete</a>
+    </td>
+</tr>}
+    </tbody>
+</table>
+<div class="d-flex align-items-center justify-content-center">
+
+    @if (Model.PageViewModel.HasPreviousPage)
+    {
+<a asp-action="Index"
+   asp-route-page="1"
+   asp-route-sortState="@Model.SortClothingItemTypeViewModel.Current"
+   asp-route-selectedName="@Model.FilterClothingItemTypeViewModel.SelectedName"
+   class="btn btn-outline-dark m-1">
+    First page
+</a>
+
+                <a asp-action="Index"
+                   asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+                   asp-route-sortState="@Model.SortClothingItemTypeViewModel.Current"
+                   asp-route-selectedName="@Model.FilterClothingItemTypeViewModel.SelectedName"
+                   class="btn btn-outline-dark m-1">
+                    Previous page
+                </a>}
+    <a class="btn btn-outline-dark m-1">
+        @Model.PageViewModel.PageNumber
+    </a>
+    @if (Model.PageViewModel.HasNextPage)
+    {
+<a asp-action="Index"
+   asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+   asp-route-sortState="@Model.SortClothingItemTypeViewModel.Current"
+   asp-route-selectedName="@Model.FilterClothingItemTypeViewModel.SelectedName"
+   class="btn btn-outline-dark m-1">
+    Next page
+</a>
+
+                <a asp-action="Index"
+                   asp-route-page="@Model.PageViewModel.TotalPages"
+                   asp-route-sortState="@Model.SortClothingItemTypeViewModel.Current"
+                   asp-route-selectedName="@Model.FilterClothingItemTypeViewModel.SelectedName"
+                   class="btn btn-outline-dark m-1">
+                    Last page (@Model.PageViewModel.TotalPages)
+                </a>}
+</div>

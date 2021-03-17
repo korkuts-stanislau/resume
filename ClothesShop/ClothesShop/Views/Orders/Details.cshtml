@@ -1,0 +1,104 @@
+﻿@model ClothesShop.ViewModels.Order.DetailsOrderViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    var defaultClothingItem = Model.OrderClothingItems.FirstOrDefault();
+}
+
+
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.CustomerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.CustomerName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.CustomerPhone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.CustomerPhone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.CustomerAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.CustomerAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.IsPaid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.IsPaid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Order.IsSent)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.IsSent)
+        </dd>
+    </dl>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => defaultClothingItem.ClothingItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultClothingItem.Count)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => defaultClothingItem.ClothingItem.Price)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderClothingItems)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClothingItem.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Count)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClothingItem.Price)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<h4>Total price is @Model.TotalPrice</h4>
+@if (User.IsInRole(ClothesShop.Areas.Identity.Roles.User) && !Model.Order.IsPaid)
+{
+    <form asp-action="PayForOrder">
+        <input type="hidden" name="id" asp-for="@Model.Order.Id" />
+        <input type="submit" value="Pay" class="btn btn-outline-dark m-1" />
+    </form>
+}
+@if (User.IsInRole(ClothesShop.Areas.Identity.Roles.Admin) && !Model.Order.IsSent)
+{
+    <form asp-action="SendOrder">
+        <input type="hidden" name="id" asp-for="@Model.Order.Id" />
+        <input type="submit" value="Send" class="btn btn-outline-dark m-1" />
+    </form>
+}
+<div>
+    @if (User.IsInRole(ClothesShop.Areas.Identity.Roles.Admin))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Order.Id" class="btn btn-outline-dark m-1">Edit</a>
+    }
+    <a asp-action="Index" class="btn btn-outline-dark m-1">Back</a>
+</div>
